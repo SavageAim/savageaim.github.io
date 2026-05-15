@@ -1,0 +1,188 @@
+* { margin:0;padding:0; }
+
+body {
+    height: 100vh;
+    color: #e4e4dc;
+    background-color: #18191c;
+    font-family: 'Raleway', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 66%;
+}
+
+.card {
+    background-color: #212227;
+    border-radius: .25rem;
+    box-shadow: 0 .5em 1em -.125em rgba(46,83,165,.1),0 0 0 1px rgba(46,83,165,.02);
+    color: #e4e4dc;
+    max-width: 100%;
+    position: relative;
+}
+
+.card-header {
+    border-bottom: 1px solid #2a2c32;
+    align-items: stretch;
+    display: flex;
+}
+
+.card-header-title {
+    align-items: center;
+    color: #edede8;
+    display: flex;
+    flex-grow: 1;
+    font-weight: 700;
+    padding: .75rem 1rem;
+}
+
+.card-header-title.is-centered {
+    justify-content: center;
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 1.125;
+}
+
+.card-header-title .title {
+    font-weight: 300;
+    padding-left: 1rem;
+}
+
+.card-content {
+    background-color: rgba(0,0,0,.02);
+    padding: 1.5rem;
+}
+
+
+hr {
+    border: none;
+    display: block;
+    height: 2px;
+    margin: 1.5rem 0;
+    background-color: #17181c;
+}
+
+.image {
+    display: block;
+    position: relative;
+}
+
+.image.is-64x64 {
+    height: 64px;
+    width: 64px;
+}
+
+.image.is-24x24 {
+    height: 24px;
+    width: 24px;
+}
+
+.image img {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+.image img.is-rounded {
+    border-radius: 9999px;
+}
+
+span.ease {
+    transition: color .4s ease;
+}
+
+.has-text-centered {
+    text-align: center !important;
+}
+.has-text-danger {
+    color: #ed123e;
+}
+.has-text-info {
+    color: #935E94;
+}
+.has-text-primary {
+    color: #5d98c4;
+}
+.has-text-success {
+    color: #4E9381;
+}
+.has-text-warning {
+    color: #cc9600;
+}
+
+footer {
+    padding-bottom: 1em;
+}
+
+footer a {
+    color: #edede8;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #346CC3;
+}
+
+.discord-link:hover .image {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(36%) saturate(3088%) hue-rotate(220deg) brightness(95%) contrast(99%);
+}
+
+.icon-stack {
+    position: relative;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 0.85em;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.icon.is-large {
+    height: 3rem;
+    width: 3rem;
+}
+
+@-moz-keyframes spin {
+    10% { -moz-transform: rotate(15deg); }
+    100% { -moz-transform: rotate(-360deg); }
+}
+@-webkit-keyframes spin {
+    10% { -webkit-transform: rotate(15deg); }
+    100% { -webkit-transform: rotate(-360deg); }
+}
+@keyframes spin {
+    10% {
+        -webkit-transform: rotate(15deg);
+        transform:rotate(15deg);
+    }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform:rotate(-360deg);
+    }
+}
+
+img.spin {
+    animation-name: spin;
+    animation-duration: 1.2s;
+}
